@@ -1,0 +1,59 @@
+body{
+    background-color: #8C6653;
+    background: -webkit-linear-gradient( to right,#D9BCB8,#CA9E93,#8C6653);
+    background: linear-gradient(to right,
+        #D9BCB8,
+        #CA9E93,
+        #8C6653);
+}
+#heading{
+    display:flex;
+    justify-content:center;
+    padding-top:40px;
+    padding-bottom:150px;
+    font-family: 'Metal Mania', cursive;
+    font-size:40px;
+    color:#D9BCB8;
+}
+.join-btn{
+   display:flex;
+   justify-content:center;
+   
+}
+
+#video-streams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: 90vh;
+    width: 1400px;
+    margin: 0 auto;
+}
+.video-container {
+    max-height: 100%;
+    border: 1px solid#462A1C;
+    background-color:#8C6653;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: #8C6653;
+    padding: 10px 20px;
+    font-size: 16px;
+    color:#DED5D0 ;
+    margin: 2px;
+}
+.video-player {
+    height: 100%;
+    width: 100%;
+}
+#stream-controls{
+    justify-content: center;
+    margin-top: 0.5em;
+}
+@media screen and (max-width:1400px){
+    #video-streams{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        width: 95%;
+    }
+    
+}
