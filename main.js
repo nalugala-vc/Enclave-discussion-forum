@@ -1,7 +1,7 @@
 //u can input the app id,token and channel b4 u ebter!!!!
-const APP_ID = "ebf7c1f0bfed4f5ea8c498e6e125f5b7"
-const TOKEN = "007eJxTYJi17+8NxsTJoYKeyscmsNf7+rKZfdojMsk+yDggmmXie30FhtSkNPNkwzSDpLTUFJM009REi2QTS4tUs1RDI9M00yTznCMSya9EpZIFwo2YGRkgEMRnYchNzMxjYAAAweceCQ=="
-const CHANNEL = "main"
+var APP_ID ;
+var TOKEN;
+const CHANNEL='main' ;
 
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
 
@@ -26,8 +26,10 @@ let joinAndDisplayLocalStream = async () => {
 }
 
 let joinStream = async () => {
+    APP_ID=document.getElementById('app_id').value;
+    TOKEN=document.getElementById('token').value;
     await joinAndDisplayLocalStream()
-    document.getElementById('join-btn').style.display = 'none'
+    document.getElementById('main').style.display = 'none'
     document.getElementById('stream-controls').style.display = 'flex'
 }
 
@@ -65,7 +67,7 @@ let leaveAndRemoveLocalStream=async()=>{
     }
 
     await client.leave()
-    document.getElementById('join-btn').style.display='block'
+    document.getElementById('main').style.display='flex'
     document.getElementById('stream-controls').style.display='none'
     document.getElementById('video-streams').innerHTML=''
 }

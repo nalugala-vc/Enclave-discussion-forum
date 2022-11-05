@@ -5,26 +5,84 @@ body{
         #D9BCB8,
         #CA9E93,
         #8C6653);
+
+    font-family: poppins;
 }
-#heading{
-    display:flex;
-    justify-content:center;
-    padding-top:40px;
-    padding-bottom:150px;
-    font-family: 'Metal Mania', cursive;
-    font-size:40px;
-    color:#D9BCB8;
+.pic p{
+    padding-top: 10px;
+    color: gray;
+    font-size: 13px;
 }
-.join-btn{
-   display:flex;
-   justify-content:center;
-   
+.pic h2{
+    color: #8C6653;
+    padding: 20px 0;
+}
+.credentials h2{
+    color: #462A1C;
+    font-size: 18px;
+}
+
+.logo{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 30px;
+    width: 30px;
+}
+.credentials h3{
+    color: #8C6653;
+}
+.credentials>*{
+    margin: 10px;
+}
+.main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+    width: 500px;
+    height: 350px;
+}
+.pic>*{
+    margin: 0;
+    padding: 0;
+}
+.pic{
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+}
+.credentials{
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 450PX;
+    background-color: #F3EEEB;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inp input{
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #462A1C;
 }
 
 #video-streams {
+    padding-top: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    height: 90vh;
+    height: 85vh;
     width: 1400px;
     margin: 0 auto;
 }
@@ -33,11 +91,19 @@ body{
     border: 1px solid#462A1C;
     background-color:#8C6653;
 }
+.join-btn{
+    margin-top: 50px;
+}
+::placeholder{
+    color: #8C6653;
+    padding-left: 10px;
+}
 button{
     border: none;
     cursor: pointer;
-    background-color: #8C6653;
-    padding: 10px 20px;
+    background-color:#462A1C;
+    width: 310px;
+    height: 40px;
     font-size: 16px;
     color:#DED5D0 ;
     margin: 2px;
